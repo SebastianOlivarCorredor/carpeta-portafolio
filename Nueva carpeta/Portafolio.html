@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Juan Sebastian Olivar Corredor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        img {
+            width: 700px;
+            height: auto;
+            margin: 20px;
+        }
+
+        #formulario {
+            margin: 20px auto;
+            width: 50%;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Portafolio Juan Sebastian Olivar Corredor</h1>
+    <img src="mi_foto.jpg">
+    <p>Mi nombre es Juan Sebastian Olivar Corredor y me apasiona el desarrollo web. Este es un portafolio dirigido hacia la clase de diseño de experiencia multimedia web, donde podras ver información mia como mis redes socciales, mis hobbies y tambien podras hacerme cualquier consulta que desees</p>
+    <h2>Entre mis hobbies tengo:</h2>
+    <ul>
+        <li>Jugar videojuegos</li>
+        <li>Ver y jugar fútbol</li>
+        <li>Ver películas y series</li>
+    </ul>
+    <video controls>
+        <source src="mi_video.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+    <audio controls>
+        <source src="mi_audio.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    <div id="formulario">
+        <h2>Formulario de Consulta</h2>
+        <form action="enviar_consulta.php" method="post">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="razon">Razón de la consulta:</label><br>
+            <textarea id="razon" name="razon" rows="4" required></textarea><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <h2>Redes Sociales</h2>
+    <table>
+        <tr>
+            <td>Instagram</td>
+            <td><a href="https://www.instagram.com"><img src="instagram.png" width="200" height="200" alt="Instagram"></a></td>
+        </tr>
+        <tr>
+            <td>Facebook</td>
+            <td><a href="https://www.facebook.com"><img src="facebook.png" width="325" height="325" alt="Facebook"></a></td>
+        </tr>
+        <tr>
+            <td>Twitter</td>
+            <td><a href="https://www.twitter.com"><img src="twitter.png" width="512" height="421" alt="Twitter"></a></td>
+        </tr>
+    </table>
+</body>
+</html>
